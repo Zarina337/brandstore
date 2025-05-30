@@ -1,0 +1,16 @@
+body{
+    background-color: black;
+}
+.cat-nav li.active a, 
+.cat-nav li:hover a{
+    background-color: white;
+    color: black;
+}
+
+
+
+.cat-nav li a{
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
