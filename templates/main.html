@@ -1,4 +1,5 @@
 {%extends "base.html"%}
+{%load static%}
 {%block content%}
 
 <div class="container-fluid home-header">
@@ -15,6 +16,105 @@
     </div>
 </div>
 </div>
+<section class="container s2 my-5">
+    <h5 class="t1"><span class="yellow">Пример</span>печати</h5>
+    <p class="t2">Это может быть на тебе</p>
+
+     <div id="corusel1" class="mycorusel container-fluid d-flex">
+    <button  class="carusel-btn left" target="corusel1" onclick="scrolltoleft(this)">left</button>
+    
+    <div  class="wrapper d-flex flex-row">
+        <div class="c-item col-4">
+            <img class="img-fluid" src="{% static "img/corusel-item.png" %}" alt="">
+        </div>
+        <div class="c-item col-4">
+            <img class="img-fluid" src="{% static "img/corusel-item.png" %}" alt="">
+        </div>
+        <div class="c-item col-4">
+            <img class="img-fluid" src="{% static "img/corusel-item.png" %}" alt="">
+        </div>
+        <div class="c-item col-4">
+            <img class="img-fluid" src="{% static "img/corusel-item.png" %}" alt="">
+        </div>
+        <div class="c-item col-4">
+            <img class="img-fluid" src="{% static "img/corusel-item.png" %}" alt="">
+        </div>
+        <div class="c-item col-4">
+            <img class="img-fluid" src="{% static "img/corusel-item.png" %}" alt="">
+        </div>
+        <div class="c-item col-4">
+            <img class="img-fluid" src="{% static "img/corusel-item.png" %}" alt="">
+        </div>
+        <div class="c-item col-4">
+            <img class="img-fluid" src="{% static "img/corusel-item.png" %}" alt="">
+        </div>
+        <div class="c-item col-4">
+            <img class="img-fluid" src="{% static "img/corusel-item.png" %}" alt="">
+        </div>
+        <div class="c-item col-4">
+            <img class="img-fluid" src="{% static "img/corusel-item.png" %}" alt="">
+        </div>
+    </div>    
+    <button class="carusel-btn right" target="corusel1" onclick="scrolltoRight(this)">Right</button>
+</div>
+</section>
 
 
+
+<section class="container s3 py-5 my-5 ">
+    <h5 class="t1 text-center">Топ про<span class="yellow">даж</span></h5>
+    <p class="t2 text-center">То, что вам нравиться</p>
+
+    <div class="mini-nav">
+       <ul class="d-flex list-unstyled justify-content-center">
+        <li ><button type="submit" class="active">Все</button></li>
+        <li><button type="submit">Кружки</button></li>
+        <li><button type="submit">Кружки</button></li>
+        <li><button type="submit">Кружки</button></li>
+        <li><button type="submit">Кружки</button></li>
+        <li><button type="submit">Кружки</button></li>
+        <li><button type="submit">Кружки</button></li>
+        <li><button type="submit">Кружки</button></li>
+        <li><button type="submit">Кружки</button></li>
+        <li><button type="submit">Кружки</button></li>
+       </ul>
+    </div>
+
+    <div class="row">
+        <a href="">
+            <div class="col-3 p-3 product">
+                <div class="p-4 pb-2 ">
+                    <img class="img-fluid w-100" src="{% static "img/t-shirt.png" %} " alt="">
+                </div>
+                <p class="product-name text-center mt-2 mb-0 "> Футболка Белая</p>
+                <p class="product-price text-center ">230₴</p>
+            </a>
+            </div>
+            <div class="col-3 p-3 product">
+                <div class="p-4 pb-2 ">
+                    <img class="img-fluid w-100" src="{% static "img/t-shirt.png" %} " alt="">
+                </div>
+                <p class="product-name text-center mt-2 mb-0 "> Футболка Белая</p>
+                <p class="product-price text-center ">230₴</p>
+            </a>
+            </div>
+            <div class="col-3 p-3 product">
+                <div class="p-4 pb-2 ">
+                    <img class="img-fluid w-100" src="{% static "img/t-shirt.png" %} " alt="">
+                </div>
+                <p class="product-name text-center mt-2 mb-0 "> Футболка Белая</p>
+                <p class="product-price text-center ">230₴</p>
+            </a>
+            </div>
+            <div class="col-3 p-3 product">
+                <div class="p-4 pb-2 ">
+                    <img class="img-fluid w-100" src="{% static "img/t-shirt.png" %} " alt="">
+                </div>
+                <p class="product-name text-center mt-2 mb-0 "> Футболка Белая</p>
+                <p class="product-price text-center ">230₴</p>
+            </a>
+            </div>
+
+    </div>
+</section>
 {% endblock %}

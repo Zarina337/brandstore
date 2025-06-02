@@ -1,5 +1,5 @@
 body{
-    background-color: black;
+    background-color: rgb(4, 4, 4);
 }
 .cat-nav li.active a, 
 .cat-nav li:hover a{
@@ -13,4 +13,133 @@ body{
     color: white;
     text-decoration: none;
     transition: 0.3s;
+}
+
+.home-header{
+    background-image: url(../img/header-img.jpg);
+    height: 120vh;
+    background-size:cover ;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.header-t1{
+    font-weight: 800;
+    font-size: 82px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.header-t1 span{
+    color:  #FFC700;
+    ;
+}
+
+.header-t2{
+    color:  #A8A8A8;
+    font-size: 24px;
+    font-weight: 400;
+}
+.header-btn1{
+    background-color:#FFC700;
+    border: none;
+    padding:10px  40px;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.s2 .t1{
+    margin: 0;
+    font-weight: 600;
+    font-size: 48px;
+    color: white;
+}
+
+.s2 .t1 span{
+     color: #FFC700;
+}
+.s2 .t2{
+    font-size: 32px;
+    font-weight: 300;
+    color: #B8B8B8;
+    ;
+}
+
+.mycorusel .wrapper{
+    overflow-x: scroll;
+    scroll-snap-type: y mandatory;
+}
+
+.mycorusel .carusel-btn{
+    position: relative;
+    background-color: transparent !important;
+    border: none;
+    width: 80px;
+
+
+}
+
+.mycorusel .carusel-btn::after{
+    position: absolute;
+    content:"" ;
+    width: 35px;
+    height: 35px;
+    left: 0;
+    top: 50%;
+    transform: rotate(45deg);
+
+    border-left: 2px solid white;
+    border-bottom: 2px solid white ;
+}
+
+.mycorusel .carusel-btn.right::after {
+    transform: rotate(-135deg);
+}
+
+.s3 {
+    .t1{
+        font-size: 72px;
+        font-weight: 700;
+        color: white;
+        
+        .yellow{
+            color: #FFC700;
+        }
+    }
+    .t2{
+        font-size: 32px;
+        font-weight: 300;
+        color: #949494;
+        ;
+    }
+
+    .mini-nav button{
+        background-color: transparent;
+        border: none;
+        color: white;
+        padding: 5px 10px ;
+        transition: 0.3s;
+        font-size:  24px;
+
+    
+        &.active , &:hover{
+            background-color: #FFC700;
+            color: rgb(0, 0, 0);
+            box-shadow:0px 0px 2px 1px  #FFC700;
+        }
+    }    
+    .product-name{
+        font-size: 20px;
+        font-weight: 300;
+        color: white;
+    }
+    .product-price{
+        font-size: 24px;
+        font-weight: 700;
+        color: white;
+    }
+    .product a {
+        text-decoration: none;
+    }
+
 }
