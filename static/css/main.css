@@ -143,3 +143,25 @@ body{
     }
 
 }
+
+
+.s4{
+
+.t1{
+    color: white;
+    font-size: 72px;
+    font-weight: 700;
+
+    span{
+        color: #FFC700;
+    }
+}
+.t2{
+    color:#949494;
+    font-size: 32px;
+    font-weight: 300;
+
+}
+
+
+}

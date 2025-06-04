@@ -1,25 +1,25 @@
-function scrolltoleft(button){
+function scrolltoleft(button) {
     console.log(button)
     let wrapper = document.querySelector(`#${button.getAttribute('target')} .wrapper`)
     let w = wrapper.querySelector('.c-item').getBoundingClientRect().width
-    let currentScroll = wrapper.scrollLeft 
+    let currentScroll = wrapper.scrollLeft
 
 
-    wrapper.scroll({ 
-    left: currentScroll - w,
-    behavior: "smooth", 
+    wrapper.scroll({
+        left: currentScroll - w,
+        behavior: "smooth",
     });
 }
 
-function scrolltoRight(button){
-console.log(button)
-let wrapper = document.querySelector(`#${button.getAttribute('target')} .wrapper`)
-let w = wrapper.querySelector('.c-item').getBoundingClientRect().width
-let currentScroll = wrapper.scrollLeft 
+function scrolltoRight(button) {
+    console.log(button)
+    let wrapper = document.querySelector(`#${button.getAttribute('target')} .wrapper`)
+    let w = wrapper.querySelector('.c-item').getBoundingClientRect().width
+    let currentScroll = wrapper.scrollLeft
 
 
-wrapper.scroll({ 
-left: currentScroll + w,
-behavior: "smooth", 
-});
+    wrapper.scroll({
+        left: currentScroll + w,
+        behavior: "smooth",
+    });
 }
