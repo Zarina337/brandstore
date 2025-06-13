@@ -252,3 +252,10 @@ background-color: #111111;
            
         }
 }
+
+.my-nav{
+
+    *{
+        color: white !important ;
+    }
+}

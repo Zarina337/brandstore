@@ -163,7 +163,7 @@ body{
 
 }
 .catalog-card{
-background-color: black;
+background-color: #111111;
 
 .product-name{
     font-size:32px ;
@@ -218,19 +218,43 @@ background-color: black;
     }
 
     .contact-form input{
-        background-color: black;
+        background-color: #111111;
         border: none;
         color: white;
         padding: 10px 20px;
         font-size: 16px;
-
+        transform: skew(-10deg);
+    }
         .contact-form input::placeholder{
             color: #FFC700 ;
             font-size: 16px;
 
         }
         .contact-form input:focus{
-            outline-color:#FFC700 ;
+            outline:1px solid #FFC700 ;
         }
+        .contact-form button{
+            padding: 10px 15px;
+            background-color: #FFC700;
+            color: black;
+            border: none;
+            font-size: 18px;
+            font-weight: 800;
+            box-shadow:  0px 0px 4px 1px #FFC700;
+        }
+        .contact-btn{
+            border: none;
+            background-color: #FFC700;
+            padding: 5px;
+            width: 40px;
+            height: 40px;
+            border-radius: 5px;
+           
+        }
+}
+
+.mynav {
+    .nav-item a{
+        color: white;
     }
 }
